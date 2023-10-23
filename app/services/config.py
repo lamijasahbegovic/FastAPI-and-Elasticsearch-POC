@@ -15,8 +15,6 @@ INDEX_MAPPINGS = {
     "movement": movement_mapping,
 }
 
-# INDEX_SETTINGS = {...} # TODO: INVESTIGATE HOW CUSTOM SETTINGS WORK AND IMPLEMENT SOME
-
 
 class ESConfigService(object):
     def __init__(self) -> None:

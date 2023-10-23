@@ -10,6 +10,7 @@ class ESUtilityService(object):
 
         for hit in hits:
             source_data = hit["_source"]
+            source_data["id"] = hit["_id"]
 
             count += 1
             data.append(source_data)

@@ -12,6 +12,7 @@ class ESCrudService(object):
     def create(self, index: IndexNames, body: BaseModel):
         """
         Method for adding a single new document for the specified index.
+        TODO: Implement creating documents in a bulk (separate from the seed_data() implementation.)
         """
 
         try:
@@ -23,6 +24,7 @@ class ESCrudService(object):
     def read(self, index: IndexNames, q: Optional[str], count: int = 3):
         """
         Method for a basic search functionality for a specific index.
+        TODO: Implement a more complex search.
         """
 
         try:
@@ -31,14 +33,35 @@ class ESCrudService(object):
         except Exception as ex:
             print("Search error: ", ex)
 
-    # TODO: UPDATE METHOD
-
-    def delete_by_query(self, index: IndexNames, query: str):
+    def update(self, index: IndexNames, doc_id: str, update_body: BaseModel):
         """
-        Method for deleting a document found through a query for a specific index.
+        Method for updating a document for a specific index by the document ID. The document can be partly or completely updated.
+        TODO: Disallow updating certain properties.
+        TODO: Implement updating by query.
         """
 
         try:
-            self.config.connection.delete_by_query(index=index, body=query)
+            result = self.config.connection.get(index=index, id=doc_id)
+            doc_body = result["_source"]
+
+            for key, value in update_body.items():
+                doc_body[key] = value
+
+            self.config.connection.update(
+                index=index, id=doc_id, body={"doc": doc_body}
+            )
+            return doc_body
+        except Exception as ex:
+            print("Error during update: ", ex)
+
+    def delete(self, index: IndexNames, doc_id: str):
+        """
+        Method for deleting a document for a specific index by the document ID.
+        TODO: Implement deleting by query.
+        """
+
+        try:
+            self.config.connection.delete(index=index, id=doc_id)
+            return {}
         except Exception as ex:
             print("Error during deletion: ", ex)
