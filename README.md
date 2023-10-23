@@ -30,13 +30,14 @@ docker compose up --build
 ```
 
 Documentation should be available at: http://localhost:8000/docs
+
 Elasticsearch dashboard should be available at: http://localhost:5601
 
 ### TODO list:
 
 - [ ] add linter to pre-commit hook
-- investigate how custom index settings work and implement some
-- add custom exception handling
-- write tests
-- extend the search functionality
-- add more indexes
+- [ ] investigate how custom index settings work and implement some
+- [ ] add custom exception handling
+- [ ] write tests
+- [ ] extend the search functionality
+- [ ] add more indexes
