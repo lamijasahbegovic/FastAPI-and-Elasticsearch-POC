@@ -7,3 +7,5 @@ TODO LIST:
 
 - [ ] update README.md
 - [ ] add linter
+- [ ] add update functionality
+- [ ] add complex search

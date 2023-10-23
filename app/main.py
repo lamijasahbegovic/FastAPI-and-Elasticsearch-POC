@@ -1,6 +1,6 @@
-from fastapi import FastAPI
-from app.routes import router as movement_router
-from app.es_config import ESConfig
+from fastapi import FastAPI, status
+from app.controllers.movements import router as movement_router
+from app.services.config import ESConfigService
 
 app = FastAPI()
 
@@ -8,7 +8,7 @@ app = FastAPI()
 @app.on_event("startup")
 def startup_events():
     print("Starting up..")
-    es_config = ESConfig()
+    es_config = ESConfigService()
     es_config.create_indexes()
 
 
@@ -17,4 +17,11 @@ def shutdown_events():
     print("Shutting down..")
 
 
-app.include_router(movement_router, tags=["movement"], prefix="/movement")
+@app.post("/seed", status_code=status.HTTP_201_CREATED)
+def add_seed_data():
+    es_config = ESConfigService()
+    es_config.seed_data()
+    return
+
+
+app.include_router(movement_router)

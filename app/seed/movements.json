@@ -1,0 +1,148 @@
+[
+  {
+    "name": "Impressionism",
+    "from_year": 1867,
+    "to_year": 1886,
+    "origin": "France",
+    "description": "Impressionism was a 19th-century art movement characterized by small, visible brush strokes, and an emphasis on capturing light and atmosphere.",
+    "characteristics": ["Brushwork", "Light and Color", "Everyday Scenes"],
+    "key_figures": ["Claude Monet", "Pierre-Auguste Renoir"],
+    "tags": ["Painting", "French Art"]
+  },
+  {
+    "name": "Surrealism",
+    "from_year": 1920,
+    "to_year": 1960,
+    "origin": "France",
+    "description": "Surrealism is an artistic movement that explores the irrational and unconscious mind, often creating dream-like, imaginative works.",
+    "characteristics": ["Dream Imagery", "Automatism", "Symbolism"],
+    "key_figures": ["Salvador Dali", "Andre Breton"],
+    "tags": ["Painting", "Surreal Art"]
+  },
+  {
+    "name": "Cubism",
+    "from_year": 1907,
+    "to_year": 1921,
+    "origin": "France",
+    "description": "Cubism is an avant-garde art movement that emphasizes abstract and geometric forms, breaking objects down into basic shapes.",
+    "characteristics": [
+      "Geometric Abstraction",
+      "Analytical Cubism",
+      "Collage"
+    ],
+    "key_figures": ["Pablo Picasso", "Georges Braque"],
+    "tags": ["Painting", "Abstract Art"]
+  },
+  {
+    "name": "Abstract Expressionism",
+    "from_year": 1940,
+    "to_year": 1960,
+    "origin": "United States",
+    "description": "Abstract Expressionism is a post-World War II art movement that emphasizes spontaneous, non-representational expression.",
+    "characteristics": [
+      "Gesture and Emotion",
+      "Action Painting",
+      "Color Field"
+    ],
+    "key_figures": ["Jackson Pollock", "Willem de Kooning"],
+    "tags": ["Painting", "American Art"]
+  },
+  {
+    "name": "Renaissance",
+    "from_year": 1300,
+    "to_year": 1600,
+    "origin": "Italy",
+    "description": "The Renaissance was a cultural and artistic movement that marked the transition from the Middle Ages to modernity.",
+    "characteristics": ["Realism", "Linear Perspective", "Classical Influence"],
+    "key_figures": ["Leonardo da Vinci", "Michelangelo"],
+    "tags": ["Painting", "Italian Art"]
+  },
+  {
+    "name": "Pop Art",
+    "from_year": 1950,
+    "to_year": 1970,
+    "origin": "United Kingdom and United States",
+    "description": "Pop Art is a movement that celebrates everyday objects and consumer culture through bold, colorful imagery.",
+    "characteristics": ["Popular Culture", "Repetition", "Bold Colors"],
+    "key_figures": ["Andy Warhol", "Roy Lichtenstein"],
+    "tags": ["Painting", "Contemporary Art"]
+  },
+  {
+    "name": "Baroque",
+    "from_year": 1600,
+    "to_year": 1700,
+    "origin": "Europe",
+    "description": "Baroque art is known for its dramatic and ornate style, characterized by grandeur, rich colors, and dynamic compositions.",
+    "characteristics": ["Dramatic Lighting", "Ornate Details", "Emotion"],
+    "key_figures": ["Caravaggio", "Peter Paul Rubens"],
+    "tags": ["Painting", "European Art"]
+  },
+  {
+    "name": "Abstract Art",
+    "from_year": 1900,
+    "to_year": null,
+    "origin": "Global",
+    "description": "Abstract art is a broad movement that emphasizes non-representational, experimental, and imaginative creations.",
+    "characteristics": [
+      "Non-Objective",
+      "Freedom of Expression",
+      "Experimentation"
+    ],
+    "key_figures": ["Wassily Kandinsky", "Kazimir Malevich"],
+    "tags": ["Painting", "Modern Art"]
+  },
+  {
+    "name": "Minimalism",
+    "from_year": 1960,
+    "to_year": null,
+    "origin": "United States",
+    "description": "Minimalism focuses on simplicity and reduction of elements, often with clean lines and geometric shapes.",
+    "characteristics": ["Simplicity", "Geometric Shapes", "Monochromatic"],
+    "key_figures": ["Donald Judd", "Dan Flavin"],
+    "tags": ["Sculpture", "Contemporary Art"]
+  },
+  {
+    "name": "Fauvism",
+    "from_year": 1904,
+    "to_year": 1908,
+    "origin": "France",
+    "description": "Fauvism is characterized by vivid colors, bold brushwork, and a departure from naturalistic color representation.",
+    "characteristics": ["Vivid Colors", "Wild Brushwork", "Non-Naturalistic"],
+    "key_figures": ["Henri Matisse", "André Derain"],
+    "tags": ["Painting", "French Art"]
+  },
+  {
+    "name": "Dadaism",
+    "from_year": 1916,
+    "to_year": 1922,
+    "origin": "Zurich, Switzerland",
+    "description": "Dadaism is an anti-art movement that rejects traditional aesthetics and seeks to provoke and disrupt established norms.",
+    "characteristics": ["Anti-Art", "Absurdity", "Collage"],
+    "key_figures": ["Marcel Duchamp", "Hugo Ball"],
+    "tags": ["Visual Arts", "Avant-Garde"]
+  },
+  {
+    "name": "Constructivism",
+    "from_year": 1917,
+    "to_year": 1930,
+    "origin": "Russia",
+    "description": "Constructivism emphasizes the use of materials and technology in art and design to create functional, geometric works.",
+    "characteristics": [
+      "Geometric Shapes",
+      "Industrial Materials",
+      "Functional Art"
+    ],
+    "key_figures": ["Vladimir Tatlin", "El Lissitzky"],
+    "tags": ["Sculpture", "Russian Art"]
+  },
+  {
+    "name": "Romanticism",
+    "from_year": 1700,
+    "to_year": 1800,
+    "origin": "Europe",
+    "description": "Romanticism focuses on emotion, nature, and individualism, often depicted in dramatic, sublime landscapes and themes.",
+    "characteristics": ["Emotion", "Nature", "Sublime"],
+    "key_figures": ["Caspar David Friedrich", "William Blake"],
+    "tags": ["Painting", "European Art"]
+  }
+]
