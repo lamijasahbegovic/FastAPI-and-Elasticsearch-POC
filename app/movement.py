@@ -20,11 +20,11 @@ class MovementModel(BaseModel):
                 "from_year": "1860",
                 "to_year": "1910",
                 "description": "A 19th-century art movement...",
-                "characteristics": ["Brushstroke", "Light", ...],
-                "key_figures": ["Claude Monet", "Pierre-Auguste Renoir", ...],
-                "major_works": ["Water Lilies", "Starry Night", ...],
-                "influences": ["Realism", "Japanese art", ...],
-                "tags": ["Post-Impressionism", "French art", ...],
+                "characteristics": ["Brushstroke", "Light"],
+                "key_figures": ["Claude Monet", "Pierre-Auguste Renoir"],
+                "major_works": ["Water Lilies", "Starry Night"],
+                "influences": ["Realism", "Japanese art"],
+                "tags": ["Post-Impressionism", "French art"],
             }
         }
 
