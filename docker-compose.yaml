@@ -1,0 +1,60 @@
+version: "3"
+
+services:
+  elasticsearch:
+    container_name: elasticsearch
+    restart: always
+    image: "elasticsearch:7.17.3"
+    ports:
+      - "9200:9200"
+    environment:
+      - xpack.security.enabled=false
+      - discovery.type=single-node
+    volumes:
+      - elasticsearch-data:/var/lib/elasticsearch/data
+    healthcheck:
+      test: curl -s http://elasticsearch:9200 >/dev/null || exit 1
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  kibana:
+    container_name: kibana
+    restart: always
+    image: "kibana:7.17.3"
+    ports:
+      - "5601:5601"
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    volumes:
+      - kibana-data:/var/lib/kibana/data
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    healthcheck:
+      test: curl -s http://kibana:5601 >/dev/null || exit 1
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    container_name: FastApiES
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    volumes:
+      - ./app:/code/app
+    environment:
+      - LOG_LEVEL=DEBUG
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+      kibana:
+        condition: service_healthy
+
+volumes:
+  elasticsearch-data: {}
+  kibana-data: {}
+  app: {}
