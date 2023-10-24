@@ -18,18 +18,12 @@ This repository contains a proof of concept for integrating FastAPI and Elastics
 
 ### Getting started
 
-Create a Python virtual environment and activate it:
-```
-python -m venv venv
-source venv/bin/activate
-```
-
 Run the app:
 ```
 docker compose up --build
 ```
 
-Documentation should be available at: http://localhost:8000/docs
+API documentation should be available at: http://localhost:8000/docs
 
 Elasticsearch dashboard should be available at: http://localhost:5601
 
